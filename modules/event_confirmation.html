@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .email-header {
+            text-align: center;
+            padding: 10px;
+            background-color: #0073e6;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        .email-body {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333333;
+        }
+        .email-body h2 {
+            color: #0073e6;
+        }
+        .event-details {
+            background-color: #f1f1f1;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>Event Confirmation</h1>
+        </div>
+        <div class="email-body">
+            <h2>Hello,</h2>
+            <p>Thank you for confirming your participation in our event! We are excited to have you with us.</p>
+            <p>Here are the event details:</p>
+            <div class="event-details">
+                <p><strong>Event Name:</strong> {event_name}</p>
+                <p><strong>Start:</strong> {event_start}</p>
+                <p><strong>End:</strong> {event_end}</p>
+                <p><strong>Venue:</strong> {event_location}</p>
+                <p><strong>Organizer:</strong> {organizer_name}</p>
+
+            </div>
+            <p>We hope you have a fantastic time and enjoy every moment of the event!</p>
+            <p>If you have any questions or special requests, feel free to contact us.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
